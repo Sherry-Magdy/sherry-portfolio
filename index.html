@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sherry - Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Pipeline rail -->
+  <nav class="rail" aria-label="Section navigation">
+    <div class="rail-track">
+      <div class="rail-line"></div>
+      <a href="#hero" class="rail-node" data-target="hero"><span class="rail-label">INIT</span></a>
+      <a href="#about" class="rail-node" data-target="about"><span class="rail-label">PROFILE.LOAD</span></a>
+      <a href="#skills" class="rail-node" data-target="skills"><span class="rail-label">STACK.CONFIG</span></a>
+      <a href="#projects" class="rail-node" data-target="projects"><span class="rail-label">BUILD.OUTPUT</span></a>
+      <a href="#internship" class="rail-node" data-target="internship"><span class="rail-label">RUNTIME.LOG</span></a>
+      <a href="#certificates" class="rail-node" data-target="certificates"><span class="rail-label">VALIDATE</span></a>
+      <a href="#contact" class="rail-node" data-target="contact"><span class="rail-label">CONNECT</span></a>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <nav class="topnav" aria-label="Section navigation (mobile)">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#internship">Experience</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" data-stage="INIT">
+      <div class="terminal" id="typeline">&gt; init --profile sherry_magdy<span class="cursor"></span></div>
+      <h1 class="hero-name">Sherry Magdy William</h1>
+      <div class="hero-role">AI DEVELOPER · AUTOMATION</div>
+      <p class="hero-desc">Computer Science &amp; IT student building at the intersection of web development and AI automation — turning manual workflows into systems that run themselves.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-solid">View projects</a>
+        <a href="#contact" class="btn btn-outline">Get in touch</a>
+      </div>
+      <div class="hero-meta">
+        <div>📍 <span>Shobra Masr, Cairo, Egypt</span></div>
+        <div>🎓 <span>El Shorouk Academy — CS &amp; IT, 2024–2028</span></div>
+        <div>⚡ <span>GPA 3.18 / 4.00</span></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" data-stage="PROFILE.LOAD">
+      <div class="eyebrow reveal">01 — About</div>
+      <div class="about-grid reveal">
+        <div class="avatar">
+            <img src="ME.png" alt="Sherry Magdy">
+        </div>
+        <div>
+          <p>I'm a Computer Science &amp; Information Technology student at El Shorouk Academy, currently in my second year, with a strong academic record and a growing focus on web development and AI-driven automation. I like taking a slow, manual process and rebuilding it as something that runs on its own.</p>
+          <p>Outside coursework, I served as a Public Relations member at Techno Maps, managing external communications and building relationships with sponsors and partners. I'm also an active IEEE member and a DSC (Developer Student Clubs) scholarship recipient, both of which have sharpened my collaborative and technical project skills.</p>
+          <p>I lead with consistency — I'm known for delivering ahead of deadlines, learning fast, and stepping up where communication and technical execution meet.</p>
+
+          <dl class="facts">
+            <div class="fact"><dt>Education</dt><dd>B.Sc. Computer Science &amp; IT, El Shorouk Academy</dd></div>
+            <div class="fact"><dt>Status</dt><dd>2nd Year · GPA 3.18/4.00</dd></div>
+            <div class="fact"><dt>Focus</dt><dd>Web Development &amp; AI Automation</dd></div>
+            <div class="fact"><dt>Languages</dt><dd>Arabic (Native), English (Fluent), Italian &amp; Turkish (Basic)</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" data-stage="STACK.CONFIG">
+      <div class="eyebrow reveal">02 — Skills &amp; Technologies</div>
+      <h2 class="reveal">What I build with</h2>
+      <div class="skill-groups reveal">
+        <div class="skill-group">
+          <div class="skill-group-head"><h3>Programming Languages</h3><span>CORE</span></div>
+          <div class="tags">
+            <span class="tag on">Python</span>
+            <span class="tag on">C++</span>
+            <span class="tag">C</span>
+            <span class="tag">C#</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-head"><h3>Web Development</h3><span>FRONTEND</span></div>
+          <div class="tags">
+            <span class="tag on">HTML</span>
+            <span class="tag on">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Frontend Development</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-head"><h3>Data &amp; AI</h3><span>AUTOMATION</span></div>
+          <div class="tags">
+            <span class="tag on">Python for Data Science</span>
+            <span class="tag on">AI Automation</span>
+            <span class="tag">AI Fundamentals</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-head"><h3>Core CS &amp; Problem Solving</h3><span>FOUNDATIONS</span></div>
+          <div class="tags">
+            <span class="tag">Object-Oriented Programming</span>
+            <span class="tag">Data Structures</span>
+            <span class="tag">Competitive Programming — Codeforces (Sherry66)</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-head"><h3>Soft Skills</h3><span>HOW I WORK</span></div>
+          <div class="tags">
+            <span class="tag">Leadership</span>
+            <span class="tag">Communication</span>
+            <span class="tag">Fast Learner</span>
+            <span class="tag">Team Player</span>
+            <span class="tag">Self-Motivated</span>
+            <span class="tag">Meets Deadlines</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" data-stage="BUILD.OUTPUT">
+      <div class="eyebrow reveal">03 — Projects</div>
+      <h2 class="reveal">Things I've built</h2>
+      <div class="project-grid reveal">
+       <!--<div class="project-card">
+          <span class="slot-tag">Slot 01 — Editable</span>
+          <h3>Project title</h3>
+          <p>One or two sentences on the problem, what you built, and the result. Swap this for a real project whenever you're ready.</p>
+          <div class="tags">
+            <span class="tag">Tech</span>
+            <span class="tag">Tech</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <span class="slot-tag">Slot 02 — Editable</span>
+          <h3>Project title</h3>
+          <p>One or two sentences on the problem, what you built, and the result. Link a GitHub repo or live demo here.</p>
+          <div class="tags">
+            <span class="tag">Tech</span>
+            <span class="tag">Tech</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <span class="slot-tag">Slot 03 — Editable</span>
+          <h3>Project title</h3>
+          <p>Good candidates: a Codeforces problem-solving showcase, a small automation script, or a class project from El Shorouk Academy.</p>
+          <div class="tags">
+            <span class="tag">Tech</span>
+            <span class="tag">Tech</span>
+          </div>
+        </div> -->
+
+        <div class="project-grid reveal">
+  <!-- Card 1: Problem Solving -->
+  <div class="project-card">
+    <span class="slot-tag">Competitive Programming</span>
+    <h3>Codeforces Practice Showcase</h3>
+    <p>Solutions to core algorithms and data structure problems focusing on efficiency, dynamic programming, and graph algorithms[cite: 2].</p>
+    <div class="tags">
+      <span class="tag">C++</span>
+      
+    </div>
+  </div>
+
+  <!-- Card 2: Academic/University Project -->
+  <div class="project-card">
+  <span class="slot-tag">Frontend / UI Design</span>
+  <h3>Bright Smile Dental Clinic</h3>
+  <p>A responsive multi-page landing page built for a private dental clinic, featuring a Bootstrap-powered navigation system, custom service cards, and dedicated treatment pages.</p>
+  
+  <div class="tags">
+    <span class="tag">HTML5</span>
+    <span class="tag">CSS3</span>
+    <span class="tag">Bootstrap 5</span>
+    <span class="tag">Responsive Layout</span>
+  </div>
+
+  <div class="project-actions" style="margin-top: 16px;">
+  <!-- Point href to your local HTML file relative to index.html -->
+  <a href="BrightSmile-byGeorge.html" target="_blank" class="btn btn-solid" style="padding: 6px 12px; font-size: 11px;">View Project</a>
+</div>
+    
+</div>
+
+  <!-- Card 3: Upcoming / Active Build -->
+  <div class="project-card">
+    <span class="slot-tag">In Progress</span>
+    <h3>AI Automation Workflow</h3>
+    <p>Building automated workflow scripts to streamline routine data processing tasks using Python and modern API tools[cite: 2].</p>
+    <div class="tags">
+      <span class="tag">AI Automation</span>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </section>
+
+    <!-- INTERNSHIP -->
+    <section id="internship" data-stage="RUNTIME.LOG">
+      <div class="eyebrow reveal">04 — Internship Experience</div>
+      <h2 class="reveal">Where I've worked</h2>
+      <div class="timeline reveal">
+        <div class="tl-item">
+          <div class="tl-head">
+            <h3>AI Developer — IT Department</h3>
+          </div>
+          <div class="tl-org">Akhnaton for Trading &amp; Distribution (ATR)</div>
+          <ul>
+            <li>Specialized in AI development within the IT team, applying AI-based approaches to internal tools and workflows.</li>
+            <li>Worked alongside the IT department to identify processes that could be automated or improved with AI.</li>
+          </ul>
+        </div>
+        
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section id="certificates" data-stage="VALIDATE">
+      <div class="eyebrow reveal">05 — Certificates</div>
+      <h2 class="reveal">Certifications</h2>
+     
+      <div class="cert-grid reveal">
+  <div class="cert-card">
+    <div class="cert-header">
+      <h3>AI Automation Track</h3>
+      <span class="cert-status">In Progress · Expected Jan 2027</span>
+    </div>
+    <div class="cert-issuer">DEPI — Digital Egypt Pioneers Initiative</div>
+    <p>Comprehensive training program focusing on AI integration and workflow automation.</p>
+  </div>
+</div>
+
+
+      </div>
+      <p class="cert-status">Currently building out my certifications in AI and automation at DEPI — this section will fill in as I complete them.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" data-stage="CONNECT">
+      <div class="eyebrow reveal">06 — Contact</div>
+      <h2 class="reveal">Let's connect</h2>
+      <div class="contact-card reveal">
+        <p style="margin-bottom:0; color:var(--text-primary); font-size:15px;">Open to internships and junior roles in AI automation. Reach out any time.</p>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:sherrymagdy066@gmail.com">
+            <span class="k">Email</span>
+            <span class="v">sherrymagdy066@gmail.com</span>
+          </a>
+          <a class="contact-link" href="tel:+201080175308">
+            <span class="k">Phone</span>
+            <span class="v">+20 108 017 5308</span>
+          <a class="contact-link" href="https://www.linkedin.com/in/sherry-magdy" target="_blank" rel="noopener">
+            <span class="k">LinkedIn</span>
+            <span class="v">sherry-magdy-linkedin</span>
+        </a>
+          <a class="contact-link" href="https://codeforces.com/profile/Sherry66" target="_blank" rel="noopener">
+            <span class="k">Codeforces</span>
+            <span class="v">Sherry66</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Built by Sherry Magdy · Cairo, Egypt
+  </footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
