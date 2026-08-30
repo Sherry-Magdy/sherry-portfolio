@@ -41,7 +41,7 @@ Keep answers short, warm, and professional. For hiring/collaboration questions, 
         },
         { role: "user", content: message }
       ],
-      model: "llama-3.3-70b-versatile",
+      model: "openai/gpt-oss-120b",
       temperature: 0.6,
       max_completion_tokens: 512
     });
