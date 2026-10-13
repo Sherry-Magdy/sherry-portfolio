@@ -2,25 +2,12 @@ const { Groq } = require("groq-sdk");
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 module.exports = async function handler(req, res) {
-  // CORS Headers
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-
-  if (req.method === 'OPTIONS') {
-    return res.status(200).end();
-  }
-
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
   try {
     const { message } = req.body;
-
-    if (!message) {
-      return res.status(400).json({ error: "Message is required" });
-    }
 
     const completion = await groq.chat.completions.create({
       messages: [
@@ -97,15 +84,13 @@ AI Developer Intern — IT Department @ Akhnaton Company for Trading & Distribut
         },
         { role: "user", content: message }
       ],
-      model: "llama-3.3-70b-versatile",
-      temperature: 0.5,
+      model: "openai/gpt-oss-120b",
+      temperature: 0.6,
       max_completion_tokens: 512
     });
 
-    const reply = completion.choices[0]?.message?.content || "I'm sorry, I couldn't process that right now.";
-    res.status(200).json({ reply });
+    res.status(200).json({ reply: completion.choices[0].message.content });
   } catch (err) {
-    console.error("Groq API Error:", err);
     res.status(500).json({ error: err.message });
   }
 };
