@@ -1,122 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sherry - Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sherry Magdy — Portfolio</title>
+
+  <link rel="icon" type="image/png" href="Sicon.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Pipeline rail -->
-  <nav class="rail" aria-label="Section navigation">
-    <div class="rail-track">
-      <div class="rail-line"></div>
-      <a href="#hero" class="rail-node" data-target="hero"><span class="rail-label">INIT</span></a>
-      <a href="#about" class="rail-node" data-target="about"><span class="rail-label">PROFILE.LOAD</span></a>
-      <a href="#skills" class="rail-node" data-target="skills"><span class="rail-label">STACK.CONFIG</span></a>
-      <a href="#projects" class="rail-node" data-target="projects"><span class="rail-label">BUILD.OUTPUT</span></a>
-      <a href="#internship" class="rail-node" data-target="internship"><span class="rail-label">RUNTIME.LOG</span></a>
-      <a href="#certificates" class="rail-node" data-target="certificates"><span class="rail-label">VALIDATE</span></a>
-      <a href="#contact" class="rail-node" data-target="contact"><span class="rail-label">CONNECT</span></a>
+  <!-- Floating Glassmorphism Navbar -->
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="nav-links">
+      <a href="#hero" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#internship" class="nav-link">Experience</a>
+      <a href="#certificates" class="nav-link">Certificates</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </div>
-  </nav>
-
-  <!-- Mobile nav -->
-  <nav class="topnav" aria-label="Section navigation (mobile)">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#internship">Experience</a>
-    <a href="#certificates">Certificates</a>
-    <a href="#contact">Contact</a>
   </nav>
 
   <main>
 
-    <!-- HERO -->
-    <section id="hero" data-stage="INIT">
-      <div class="terminal" id="typeline">&gt; init --profile sherry_magdy<span class="cursor"></span></div>
+    <!-- HERO SECTION -->
+    <section id="hero">
+      <div class="terminal" id="typeline">&gt; transforming_ideas_into_solution<span class="cursor"></span></div>
       <h1 class="hero-name">Sherry Magdy William</h1>
-      <div class="hero-role">AI DEVELOPER · AUTOMATION</div>
-      <p class="hero-desc">Computer Science &amp; IT student building at the intersection of web development and AI automation — turning manual workflows into systems that run themselves.</p>
+      <div class="hero-role">WEB DESIGNER · AI AUTOMATION ENGINEER</div>
+
+      <p class="hero-desc">
+        Web Designer & AI Automation Engineer skilled in building responsive web applications and designing end-to-end
+        AI workflows with n8n — turning manual processes into automated systems.
+      </p>
+
       <div class="hero-actions">
-        <a href="#projects" class="btn btn-solid">View projects</a>
-        <a href="#contact" class="btn btn-outline">Get in touch</a>
+        <a href="#projects" class="btn btn-solid">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
       </div>
+
       <div class="hero-meta">
-        <div>📍 <span>Shobra Masr, Cairo, Egypt</span></div>
-        <div>🎓 <span>El Shorouk Academy — CS &amp; IT, 2024–2028</span></div>
-        <div>⚡ <span>GPA 3.18 / 4.00</span></div>
+        <div>📍 <span>Shoubra Masr, Cairo, Egypt</span></div>
+        <div>🎓 <span>El Shorouk Academy — CS & IT (2024–2028)</span></div>
+        <div>⚡ <span>GPA 3.12 / 4.00</span></div>
       </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" data-stage="PROFILE.LOAD">
-      <div class="eyebrow reveal">01 — About</div>
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <div class="eyebrow reveal">01 — About Me</div>
       <div class="about-grid reveal">
         <div class="avatar">
-            <img src="ME.png" alt="Sherry Magdy">
+          <img src="ME.png" alt="Sherry Magdy Profile Photo">
         </div>
-        <div>
-          <p>I'm a Computer Science &amp; Information Technology student at El Shorouk Academy, currently in my second year, with a strong academic record and a growing focus on web development and AI-driven automation. I like taking a slow, manual process and rebuilding it as something that runs on its own.</p>
-          <p>Outside coursework, I served as a Public Relations member at Techno Maps, managing external communications and building relationships with sponsors and partners. I'm also an active IEEE member and a DSC (Developer Student Clubs) scholarship recipient, both of which have sharpened my collaborative and technical project skills.</p>
-          <p>I lead with consistency — I'm known for delivering ahead of deadlines, learning fast, and stepping up where communication and technical execution meet.</p>
+
+        <div class="about-content">
+          <p>
+            I am a Web Designer and AI Automation Engineer with a strong passion for solving real-world operational
+            bottlenecks. I specialize in replacing slow, repetitive manual workflows with self-running, AI-driven
+            automation pipelines and clean, responsive web applications.
+          </p>
+          <p>
+            Through specialized training with ITI, NTI, and DEPI, along with hands-on industrial experience at Akhnaton
+            Company (Eva Group), I help teams and businesses save valuable hours by connecting APIs, AI models, and
+            custom web interfaces into cohesive digital solutions.
+          </p>
+          <p>
+            I lead with speed and consistency — known for building robust solutions within strict deadlines, mastering
+            new technical stacks rapidly, and bridging the gap between technical execution and clear communication.
+          </p>
 
           <dl class="facts">
-            <div class="fact"><dt>Education</dt><dd>B.Sc. Computer Science &amp; IT, El Shorouk Academy</dd></div>
-            <div class="fact"><dt>Status</dt><dd>2nd Year · GPA 3.18/4.00</dd></div>
-            <div class="fact"><dt>Focus</dt><dd>Web Development &amp; AI Automation</dd></div>
-            <div class="fact"><dt>Languages</dt><dd>Arabic (Native), English (Fluent), Italian &amp; Turkish (Basic)</dd></div>
+
+            <div class="fact">
+              <dt>Core USP</dt>
+              <dd>Verified Data AI Assistants & Custom n8n Workflows</dd>
+            </div>
+            <div class="fact">
+              <dt>Languages</dt>
+              <dd>Arabic (Native), English (Fluent), Italian & Turkish (Basic)</dd>
+            </div>
           </dl>
         </div>
       </div>
+      <!-- Dedicated Education Card -->
+      <div class="education-card"
+        style="margin-top: 24px; padding: 20px 24px; background: var(--bg-surface); border: 1px solid var(--border-line); border-radius: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+        <div>
+          <div
+            style="font-family: var(--font-mono); font-size: 11px; color: var(--signal); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px;">
+            🎓 Academic Education</div>
+          <h3 style="font-size: 17px; margin: 0 0 4px 0; color: var(--text-primary);">Bachelor of Computer Science &
+            Information Technology</h3>
+          <p style="margin: 0; font-size: 13.5px; color: var(--text-muted);">El Shorouk Academy · Cairo, Egypt</p>
+        </div>
+        <div
+          style="text-align: right; font-family: var(--font-mono); font-size: 12px; color: var(--wire); background: var(--wire-soft); padding: 8px 14px; border-radius: 20px; border: 1px solid rgba(13,148,136,0.3);">
+          GPA 3.12 / 4.00 · Expected 2028
+        </div>
+      </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" data-stage="STACK.CONFIG">
-      <div class="eyebrow reveal">02 — Skills &amp; Technologies</div>
-      <h2 class="reveal">What I build with</h2>
+    <!-- SERVICES SECTION -->
+    <section id="services">
+      <div class="eyebrow reveal">02 — Services & Solutions</div>
+      <h2 class="reveal">What I Offer</h2>
+
+      <div class="services-grid reveal">
+        <div class="service-card">
+          <div class="service-icon">🌐</div>
+          <h3>Web Development & Design</h3>
+          <p>Designing and building modern, responsive, mobile-first websites using HTML5, CSS3, JavaScript,
+            Flexbox/Grid, and dynamic DOM manipulation.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3>AI Automation Workflows</h3>
+          <p>Architecting end-to-end automated pipelines with n8n, connecting APIs, webhooks, Slack, Email, and web apps
+            to replace manual operational lookups.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🤖</div>
+          <h3>Conversational AI & Chatbots</h3>
+          <p>Building specialized internal chatbots and AI assistants that query strictly verified datasets with
+            multi-filter search, preventing hallucinated answers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <div class="eyebrow reveal">03 — Skills & Technologies</div>
+      <h2 class="reveal">Technical Toolkit</h2>
+
       <div class="skill-groups reveal">
+
         <div class="skill-group">
-          <div class="skill-group-head"><h3>Programming Languages</h3><span>CORE</span></div>
+          <div class="skill-group-head">
+            <h3>Web Development</h3>
+            <span>FRONTEND</span>
+          </div>
           <div class="tags">
-            <span class="tag on">Python</span>
-            <span class="tag on">C++</span>
-            <span class="tag">C</span>
-            <span class="tag">C#</span>
+            <span class="tag on">HTML5</span>
+            <span class="tag on">CSS3 (Flexbox/Grid)</span>
+            <span class="tag on">JavaScript</span>
+            <span class="tag">Responsive & Mobile-First Design</span>
+            <span class="tag">DOM Manipulation</span>
           </div>
         </div>
+
         <div class="skill-group">
-          <div class="skill-group-head"><h3>Web Development</h3><span>FRONTEND</span></div>
+          <div class="skill-group-head">
+            <h3>AI & Automation</h3>
+            <span>INTELLIGENCE</span>
+          </div>
           <div class="tags">
-            <span class="tag on">HTML</span>
-            <span class="tag on">CSS</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">Frontend Development</span>
+            <span class="tag on">n8n (Workflow Automation)</span>
+            <span class="tag on">AI Agents Development</span>
+            <span class="tag on">Prompt Engineering</span>
+            <span class="tag">Generative AI</span>
+            <span class="tag">Production Security & Governance</span>
           </div>
         </div>
+
         <div class="skill-group">
-          <div class="skill-group-head"><h3>Data &amp; AI</h3><span>AUTOMATION</span></div>
+          <div class="skill-group-head">
+            <h3>Data Science & Machine Learning</h3>
+            <span>ANALYSIS</span>
+          </div>
           <div class="tags">
             <span class="tag on">Python for Data Science</span>
-            <span class="tag on">AI Automation</span>
-            <span class="tag">AI Fundamentals</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">SciPy</span>
+            <span class="tag">Machine Learning Fundamentals</span>
           </div>
         </div>
+
         <div class="skill-group">
-          <div class="skill-group-head"><h3>Core CS &amp; Problem Solving</h3><span>FOUNDATIONS</span></div>
+          <div class="skill-group-head">
+            <h3>Programming Languages & CS Core</h3>
+            <span>FOUNDATIONS</span>
+          </div>
           <div class="tags">
-            <span class="tag">Object-Oriented Programming</span>
+            <span class="tag on">Python</span>
+            <span class="tag">C++</span>
+            <span class="tag">C</span>
+            <span class="tag">C#</span>
+            <span class="tag">Object-Oriented Programming (OOP)</span>
             <span class="tag">Data Structures</span>
-            <span class="tag">Competitive Programming — Codeforces (Sherry66)</span>
+            <span class="tag">Codeforces (Sherry66)</span>
           </div>
         </div>
+
         <div class="skill-group">
-          <div class="skill-group-head"><h3>Soft Skills</h3><span>HOW I WORK</span></div>
+          <div class="skill-group-head">
+            <h3>Soft Skills & Leadership</h3>
+            <span>WORK ETHIC</span>
+          </div>
           <div class="tags">
             <span class="tag">Leadership</span>
             <span class="tag">Communication</span>
@@ -124,162 +222,226 @@
             <span class="tag">Team Player</span>
             <span class="tag">Self-Motivated</span>
             <span class="tag">Meets Deadlines</span>
+            <span class="tag">IEEE Active Member</span>
           </div>
         </div>
+
       </div>
     </section>
 
-    <!-- PROJECTS -->
-  <section id="projects" data-stage="BUILD.OUTPUT">
-  <div class="eyebrow reveal">03 — Projects</div>
-  <h2 class="reveal">Things I've built</h2>
-  <div class="project-grid reveal">
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <div class="eyebrow reveal">04 — Capstone & Featured Work</div>
+      <h2 class="reveal">Things I've Built</h2>
 
-  <div class="project-card">
-  <span class="slot-tag">Learning · Expected Jan 2027</span>
-  <h3>AI Automation Workflow — DEPI</h3>
-  <p><strong>Context:</strong> Enrolled in DEPI's AI & Data Science track — AI Automation Workflow with n8n (Professional), covering AI fundamentals, prompt engineering, AI agents, and automation with n8n.<br>
-  <strong>Goal:</strong> Build a capstone project applying intelligent agents and automated workflows to a real organizational task, following best practices for security and responsible AI use.<br>
-  <strong>Status:</strong> Currently progressing through the automation and AI agent modules — capstone project expected around January 2027.</p>
-  <div class="tags">
-    <span class="tag">n8n</span>
-    <span class="tag">AI Agents</span>
-    <span class="tag">Prompt Engineering</span>
-  </div>
-</div>
-  <div class="project-card">
-  <span class="slot-tag">Learning · Expected Oct 2026</span>
-  <h3>Web Design Program — NTI</h3>
-  <p><strong>Context:</strong> Completing NTI's Web Design module (90 hours), covering HTML5, CSS (including Flexbox/Grid and responsive design), and JavaScript fundamentals with DOM manipulation.<br>
-  <strong>Goal:</strong> Design and build a complete, responsive, user-friendly website as the module's practical end project.<br>
-  <strong>Status:</strong> In progress — final project expected by late September / early October 2026.</p>
-  <div class="tags">
-    <span class="tag">HTML5</span>
-    <span class="tag">CSS (Flexbox/Grid)</span>
-    <span class="tag">JavaScript</span>
-  </div>
-</div>
-<div class="project-card">
-  <span class="slot-tag">Learning · Expected Mid-September 2026</span>
-  <h3> Python & Machine Learning (Level One) — ITI</h3>
-  <p><strong>Context:</strong> Training at the Information Technology Institute (ITI) on Python and Machine Learning fundamentals — Level One.<br>
-  <strong>Goal:</strong> Build a strong foundation in Python for data work and core machine learning concepts, applied through practical exercises.<br>
-  <strong>Status:</strong> In progress — Level One expected to be completed mid-September 2026.</p>
-  <div class="tags">
-    <span class="tag">Python</span>
-    <span class="tag">Machine Learning</span>
-  </div>
-</div>
+      <div class="project-grid reveal">
 
-  </div>
-</section>
+        <article class="project-card">
+          <span class="slot-tag">Internal Enterprise Tool · Completed</span>
+          <h3>AI Employee Assistant Chatbot — Eva Group</h3>
+          <p>
+            <strong>Context:</strong> Developed for Akhnaton Trading & Distribution IT Department.<br>
+            <strong>Impact:</strong> Replaced manual spreadsheet lookups with a natural-language chatbot searching
+            verified employee master data with zero hallucinated results.<br>
+            <strong>Execution:</strong> Delivered source code, chat UI, and full test cases within an 8-day sprint.
+          </p>
+          <div class="tags">
+            <span class="tag">Conversational AI</span>
+            <span class="tag">Verified Master Data</span>
+            <span class="tag">Sprint Delivery</span>
+          </div>
+        </article>
 
-    <!-- INTERNSHIP -->
-    <section id="internship" data-stage="RUNTIME.LOG">
-      <div class="eyebrow reveal">04 — Internship Experience</div>
-      <h2 class="reveal">Where I've worked</h2>
+        <article class="project-card">
+          <span class="slot-tag">DEPI Capstone · Ongoing</span>
+          <h3>AI Automation Workflow with n8n Professional</h3>
+          <p>
+            <strong>Context:</strong> Digital Egypt Pioneers Initiative (DEPI) 90-hour track.<br>
+            <strong>Goal:</strong> Building production-grade automated AI agents across Slack, Email, and Web, focusing
+            on responsible AI adoption and security.<br>
+            <strong>Status:</strong> Hands-on agent development and pipeline testing.
+          </p>
+          <div class="tags">
+            <span class="tag">n8n</span>
+            <span class="tag">AI Agents</span>
+            <span class="tag">Workflow Automation</span>
+          </div>
+        </article>
+        <article class="project-card">
+          <span class="slot-tag">NTI Web Design Project</span>
+          <h3>Responsive Web Application</h3>
+          <p>
+            <strong>Context:</strong> 90-Hour Intensive Web Design Track with NTI.<br>
+            <strong>Goal:</strong> Designed and developed a fully responsive, user-friendly end-of-course website using
+            HTML5 semantics, CSS Grid/Flexbox, and DOM manipulation.
+          </p>
+          <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS Grid/Flexbox</span>
+            <span class="tag">JavaScript DOM</span>
+          </div>
+
+          <a href="https://sherry-magdy.github.io/BrightSmile-Clinic/" target="_blank" class="btn btn-outline"
+            style="margin-top: 12px; font-size: 11px; padding: 6px 12px;">
+            🔗 Live Demo / Code
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- INTERNSHIP SECTION -->
+    <section id="internship">
+      <div class="eyebrow reveal">05 — Work Experience</div>
+      <h2 class="reveal">Where I've Worked</h2>
+
       <div class="timeline reveal">
         <div class="tl-item">
           <div class="tl-head">
             <h3>AI Developer — IT Department</h3>
+            <span class="tl-date">Aug 2026 – Sep 2026 (1 Month)</span>
           </div>
-          <div class="tl-org">Akhnaton for Trading &amp; Distribution (ATR)</div>
+          <div class="tl-org">Akhnaton Company for Trading & Distribution (Eva Group)</div>
           <ul>
-            <li>Specialized in AI development within the IT team, applying AI-based approaches to internal tools and workflows.</li>
-            <li>Worked alongside the IT department to identify processes that could be automated or improved with AI.</li>
+            <li>Engineered an internal AI-powered employee information assistant, eliminating manual spreadsheet queries
+              for contact details, departments, and office locations[cite: 7].</li>
+            <li>Implemented intelligent multi-filter conversational search (name, email, code) with strict no-match and
+              fallback rules to eliminate AI hallucinations[cite: 7].</li>
+            <li>Completed and delivered the full system, including chat interface and documentation, during an intensive
+              8-day sprint[cite: 7].</li>
           </ul>
         </div>
-        
-    </section>
-
-    <!-- CERTIFICATES -->
-    <section id="certificates" data-stage="VALIDATE">
-      <div class="eyebrow reveal">05 — Certificates</div>
-      <h2 class="reveal">Certifications</h2>
-     
-    <div class="cert-grid reveal">
-  <div class="cert-card">
-    <div class="cert-header">
-      <h3>AI Automation Track</h3>
-      <span class="cert-status">In Progress · Expected Jan 2027</span>
-    </div>
-    <div class="cert-issuer">DEPI — Digital Egypt Pioneers Initiative</div>
-    <p>Comprehensive training program focusing on AI integration and workflow automation using n8n, covering AI agents, prompt engineering, and automation best practices.</p>
-  </div>
-
-  <div class="cert-card">
-    <div class="cert-header">
-      <h3>Web Design</h3>
-      <span class="cert-status">In Progress · Expected Oct 2026</span>
-    </div>
-    <div class="cert-issuer">NTI — National Telecommunication Institute</div>
-    <p>90-hour module covering HTML5, CSS (Flexbox/Grid, responsive design), and JavaScript fundamentals with DOM manipulation.</p>
-  </div>
-
-  <div class="cert-card">
-    <div class="cert-header">
-      <h3>Python & Machine Learning — Level One</h3>
-      <span class="cert-status">In Progress · Expected Mid-Sep 2026</span>
-    </div>
-    <div class="cert-issuer">ITI — Information Technology Institute</div>
-    <p>Foundational training in Python for data work and core machine learning concepts through hands-on exercises.</p>
-  </div>
-</div>
-
-
       </div>
-     <p class="cert-status">Actively completing training programs in web development, AI automation, and machine learning — this section will update as certificates are earned .</p>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact" data-stage="CONNECT">
-      <div class="eyebrow reveal">06 — Contact</div>
-      <h2 class="reveal">Let's connect</h2>
-      <div class="contact-card reveal">
-        <p style="margin-bottom:0; color:var(--text-primary); font-size:15px;">Open to internships and junior roles in AI automation. Reach out any time.</p>
-        <div class="contact-links">
-          <a class="contact-link" href="mailto:sherrymagdy066@gmail.com">
-            <span class="k">Email</span>
-            <span class="v">sherrymagdy066@gmail.com</span>
-          </a>
-          <a class="contact-link" href="tel:+201080175308">
-            <span class="k">Phone</span>
-            <span class="v">+20 108 017 5308</span>
-          <a class="contact-link" href="https://www.linkedin.com/in/sherry-magdy" target="_blank" rel="noopener">
-            <span class="k">LinkedIn</span>
-            <span class="v">sherry-magdy-linkedin</span>
-        </a>
-          <a class="contact-link" href="https://codeforces.com/profile/Sherry66" target="_blank" rel="noopener">
-            <span class="k">Codeforces</span>
-            <span class="v">Sherry66</span>
-          </a>
-            <a class="contact-link" href="https://github.com/Sherry-Magdy" target="_blank" rel="noopener">
-            <span class="k">GitHub</span>
-            <span class="v">Sherry-Magdy</span>
+    <!-- CERTIFICATES SECTION -->
+    <section id="certificates">
+      <div class="eyebrow reveal">06 — Training & Certifications</div>
+      <h2 class="reveal">Credentials</h2>
+
+      <div class="cert-grid reveal">
+
+        <!-- DEPI Track -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <h3>AI Automation Workflow with n8n Professional</h3>
+            <span class="cert-status">Ongoing · Jul 2026 – Jan 2027</span>
+          </div>
+          <div class="cert-issuer">DEPI — Digital Egypt Pioneers Initiative</div>
+          <p>90-hour track covering Generative AI, Prompt Engineering, AI Agents, and enterprise automation security.
+          </p>
+        </div>
+
+        <!-- NTI Certificate with Image -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <h3>Web Design Program</h3>
+            <span class="cert-status">Completed · Sep 2026</span>
+          </div>
+          <div class="cert-issuer">NTI — National Telecommunication Institute</div>
+          <p>90-hour intensive program in HTML5, CSS Flexbox/Grid, mobile-first design, and JavaScript DOM manipulation.
+          </p>
+
+          <!-- صورة شهادة NTI -->
+          <a href="NTI_certificate.jpg" target="_blank" class="cert-img-wrapper">
+            <img src="NTI_certificate.jpg" alt="NTI Web Design Certificate" class="cert-img">
           </a>
         </div>
+
+        <!-- ITI Certificate with Image -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <h3>Machine Learning & AI (Level 1)</h3>
+            <span class="cert-status">Completed · Aug 2026</span>
+          </div>
+          <div class="cert-issuer">ITI — Information Technology Institute</div>
+          <p>Practical training in Python data science stack (Pandas, NumPy, Matplotlib) and ML algorithms.</p>
+
+          <!-- صورة شهادة ITI -->
+          <a href="ITI_certificate.jpg" target="_blank" class="cert-img-wrapper">
+            <img src="ITI_certificate.jpg" alt="ITI Machine Learning Certificate" class="cert-img">
+          </a>
+        </div>
+
+        <!-- Huawei ICT Academy Certificate -->
+        <div class="cert-card">
+          <div class="cert-header">
+            <h3>Overview of AI</h3>
+            <span class="cert-status">Completed · Sep 2026</span>
+          </div>
+          <div class="cert-issuer">Huawei ICT Academy — Egypt</div>
+          <p>Foundational certificate in Artificial Intelligence covering Strong vs. Weak AI, real-world AI
+            applications, key technology trends, difficulties, and future prospects.</p>
+
+          <!-- صورة الشهادة -->
+          <a href="Huawei_certificate.jpg" target="_blank" class="cert-img-wrapper">
+            <img src="Huawei_certificate.jpg" alt="Huawei ICT Academy Overview of AI Certificate" class="cert-img">
+          </a>
+        </div>
+
       </div>
-    </section>
+
+      <!-- CONTACT SECTION / CTA -->
+      <section id="contact">
+        <div class="eyebrow reveal">07 — Get In Touch</div>
+        <h2 class="reveal">Let's Connect</h2>
+
+        <div class="contact-card reveal">
+          <p class="contact-subtext">Open to internships, freelance projects, and junior roles in AI Automation & Web
+            Development. Reach out anytime!</p>
+
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:sherrymagdy066@gmail.com">
+              <span class="k">Email</span>
+              <span class="v">sherrymagdy066@gmail.com</span>
+            </a>
+
+            <a class="contact-link" href="tel:+201080175308">
+              <span class="k">Phone</span>
+              <span class="v">+20 108 017 5308</span>
+            </a>
+
+            <a class="contact-link" href="https://linkedin.com/in/sherry-magdy-3b7b44325" target="_blank"
+              rel="noopener">
+              <span class="k">LinkedIn</span>
+              <span class="v">sherry-magdy</span>
+            </a>
+
+            <a class="contact-link" href="https://codeforces.com/profile/Sherry66" target="_blank" rel="noopener">
+              <span class="k">Codeforces</span>
+              <span class="v">Sherry66</span>
+            </a>
+
+            <a class="contact-link" href="https://github.com/Sherry-Magdy" target="_blank" rel="noopener">
+              <span class="k">GitHub</span>
+              <span class="v">Sherry-Magdy</span>
+            </a>
+
+
+          </div>
+        </div>
+      </section>
 
   </main>
 
   <footer>
     Built by Sherry Magdy · Cairo, Egypt
   </footer>
-  
-<div id="chatbot">
-  <button id="chatbot-toggle">💬 Ask about Sherry</button>
-  <div id="chatbot-box" class="hidden">
-    <div id="chatbot-messages"></div>
-    <div id="chatbot-input-row">
-      <input id="chatbot-input" type="text" placeholder="Ask something..." />
-      <button id="chatbot-send">Send</button>
+
+  <!-- Chatbot Widget -->
+  <div id="chatbot">
+    <button id="chatbot-toggle">💬 Ask about Sherry</button>
+    <div id="chatbot-box" class="hidden">
+      <div id="chatbot-messages"></div>
+      <div id="chatbot-input-row">
+        <input id="chatbot-input" type="text" placeholder="Ask something about Sherry..." />
+        <button id="chatbot-send">Send</button>
+      </div>
     </div>
   </div>
-</div>
 
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
+
 </html>
